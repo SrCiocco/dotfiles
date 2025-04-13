@@ -36,6 +36,10 @@ alias fastfetch="clear && fastfetch"
 
 alias deudas="$EDITOR Documentos/deudas.txt"
 
+# Open.
+
+alias open="xdg-open"
+
 # Bluetooth.
 alias bt="bluetuith"
 

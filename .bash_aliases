@@ -9,6 +9,7 @@
 # + Aquí pondré los archivos de configuración.
 
 HYPRCONFIG="$XDG_CONFIG_HOME/hypr/hyprland.conf"
+KITTYCONFIG="$XDG_CONFIG_HOME/kitty/kitty.conf"
 ALIASES="$HOME/.bash_aliases"
 
 # - Fin de las carpetas de configuración.
@@ -17,6 +18,7 @@ ALIASES="$HOME/.bash_aliases"
 # + Aquí pondré los atajos a configuraciones.
 
 alias hyprconf="$EDITOR $HYPRCONFIG"
+alias kittyconf="$EDITOR $KITTYCONFIG"
 alias aliases="$EDITOR $ALIASES"
 
 # - Fin de los atajos a configuraciones.

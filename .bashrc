@@ -25,6 +25,13 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 
 # Created by `pipx` on 2025-01-28 01:56:07
 export PATH="$PATH:/home/ciocco/.local/bin"
+
+# --- Zoxide ---
+eval "$(zoxide init bash)"

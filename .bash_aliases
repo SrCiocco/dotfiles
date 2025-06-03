@@ -60,9 +60,12 @@ alias ll="lsd -alF"
 # - Fin de los aliases para el comando lsd.
 
 # cat.
-
 alias cat="bat"
+
 alias mj="command cat $HOME/Imágenes/mj.txt"
+
+# zoxide.
+alias cd="z"
 
 # + Constantes para hacer más legible el código.
 ELECTROPATH="/home/ciocco/Música/tidal-ng/Playlists/Electropunga"

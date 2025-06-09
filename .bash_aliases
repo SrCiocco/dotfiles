@@ -3,7 +3,7 @@
 ########################################################
 
 # + Aquí pondré los aliases para AppImages.
-
+alias obsidian="Obsidian.AppImage"
 # - Fin de los aliases para AppImages.
 
 # + Aquí pondré los archivos de configuración.
@@ -26,17 +26,9 @@ alias aliases="$EDITOR $ALIASES"
 # Dotfiles.
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
-# Reloj.
-
-alias clock="tty-clock -cbSs -C 5 -f %d/%m/%y" # -C 5 = Morado.
-
 # Fastfetch.
 
 alias fastfetch="clear && fastfetch"
-
-# Deudas.
-
-alias deudas="$EDITOR Documentos/deudas.txt"
 
 # Open.
 
@@ -69,6 +61,8 @@ alias mj="command cat $HOME/Imágenes/mj.txt"
 # zoxide.
 alias cd="z"
 
+# ++++ E L E C T R O P U N G A ++++
+
 # + Constantes para hacer más legible el código.
 ELECTROPATH="/home/ciocco/Música/tidal-ng/Playlists/Electropunga"
 MSG_SUCCESS="echo -- Playlist Electropunga generada! --"
@@ -86,3 +80,4 @@ alias mkpl="find $ELECTROPATH -name '*.flac' > $ELECTROPATH/playlist.m3u && $MSG
 # Empieza a reproducir la mejor playlist "ELECTROPUNGA"!
 alias electropunga="$MSG_PLAY && $PLAY_WELCOME && $PLAY_SHUFFLE_MUSIC"
 
+# ----- E L E C T R O P U N G A ----

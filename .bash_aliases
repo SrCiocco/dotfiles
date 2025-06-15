@@ -28,7 +28,7 @@ alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # Fastfetch.
 
-alias fastfetch="clear && fastfetch"
+alias fastfetch="clear && fastfetch --logo small"
 
 # Open.
 
@@ -51,7 +51,7 @@ alias rmf="rm -rfv"
 alias ls="lsd -F"
 alias la="lsd -aF"
 alias ll="lsd -alF"
-# - Fin de los aliases para el comando lsd.
+# - Fin de los aliases para el comando ls.
 
 # cat.
 alias cat="bat"

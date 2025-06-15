@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Tidal
+Exec=brave --app=https://listen.tidal.com/
+Icon=/home/ciocco/.local/share/icons/tidal.svg
+Type=Application
+Categories=Network;WebBrowser;
+StartupNotify=true

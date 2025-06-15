@@ -11,11 +11,6 @@ alias grep='grep --color=auto'
 
 PS1='[\u@\h \w]$ '
 
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/share/powerline/bindings/bash/powerline.sh
-
 # Variables de entorno.
 export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=nvim
@@ -33,6 +28,12 @@ fi
 
 # Created by `pipx` on 2025-01-28 01:56:07
 export PATH="$PATH:/home/ciocco/.local/bin"
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
+# Starship
+eval "$(starship init bash)"
 
 # Zoxide
 eval "$(zoxide init bash)"

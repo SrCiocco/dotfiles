@@ -11,6 +11,7 @@ alias obsidian="Obsidian.AppImage"
 HYPRCONFIG="$XDG_CONFIG_HOME/hypr/hyprland.conf"
 KITTYCONFIG="$XDG_CONFIG_HOME/kitty/kitty.conf"
 ALIASES="$HOME/.bash_aliases"
+BASHRC="$HOME/.bashrc"
 
 # - Fin de las carpetas de configuración.
 
@@ -20,11 +21,18 @@ ALIASES="$HOME/.bash_aliases"
 alias hyprconf="$EDITOR $HYPRCONFIG"
 alias kittyconf="$EDITOR $KITTYCONFIG"
 alias aliases="$EDITOR $ALIASES"
+alias bashrc="$EDITOR $BASHRC"
 
 # - Fin de los atajos a configuraciones.
 
 # Dotfiles.
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+alias rcc="rclone copy $HOME/Documents/Facultad/IPS-Drive drive:Facultad/"
+
+# Mostrar una imagen con kitty
+
+alias icat="kitten icat"
 
 # Fastfetch.
 

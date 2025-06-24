@@ -2,7 +2,7 @@
   "bar.customModules.storage.paths": [
     "/"
   ],
-  "scalingPriority": "gdk",
+  "scalingPriority": "both",
   "theme.bar.floating": true,
   "theme.bar.location": "top",
   "bar.autoHide": "never",
@@ -37,7 +37,7 @@
   "menus.clock.time.hideSeconds": false,
   "tear": false,
   "theme.bar.menus.enableShadow": false,
-  "theme.bar.menus.background": "#000000",
+  "theme.bar.menus.background": "#5e5c64",
   "theme.bar.background": "#000000",
   "theme.bar.buttons.media.icon": "#FFFFFF",
   "theme.bar.buttons.media.text": "#FFFFFF",
@@ -500,9 +500,9 @@
   "theme.osd.muted_zero": true,
   "menus.volume.raiseMaximumVolume": true,
   "menus.clock.weather.enabled": true,
-  "theme.bar.menus.menu.battery.scaling": 100,
-  "theme.bar.menus.menu.network.scaling": 100,
-  "theme.bar.menus.menu.power.scaling": 100,
+  "theme.bar.menus.menu.battery.scaling": 90,
+  "theme.bar.menus.menu.network.scaling": 90,
+  "theme.bar.menus.menu.power.scaling": 90,
   "menus.dashboard.powermenu.avatar.image": "~/.face.icon",
   "menus.dashboard.controls.enabled": true,
   "menus.dashboard.stats.enable_gpu": false,
@@ -523,7 +523,8 @@
         "windowtitle"
       ],
       "middle": [
-        "clock"
+        "clock",
+        "cava"
       ],
       "right": [
         "volume",
@@ -593,5 +594,28 @@
   "theme.bar.layer": "top",
   "bar.bluetooth.label": true,
   "bar.clock.icon": "󰸗",
-  "bar.customModules.netstat.pollingInterval": 100
+  "bar.customModules.netstat.pollingInterval": 100,
+  "theme.osd.scaling": 90,
+  "theme.bar.menus.menu.dashboard.scaling": 85,
+  "theme.notification.scaling": 90,
+  "theme.bar.menus.menu.dashboard.confirmation_scaling": 90,
+  "theme.bar.menus.menu.media.scaling": 90,
+  "theme.bar.menus.menu.volume.scaling": 90,
+  "theme.bar.menus.menu.bluetooth.scaling": 90,
+  "theme.bar.menus.menu.clock.scaling": 90,
+  "theme.bar.menus.menu.notifications.scaling": 90,
+  "theme.tooltip.scaling": 90,
+  "theme.bar.menus.popover.scaling": 90,
+  "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
+  "bar.customModules.cpuTemp.sensor": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input",
+  "theme.bar.buttons.modules.weather.enableBorder": false,
+  "bar.customModules.cava.showIcon": false,
+  "bar.customModules.cava.bars": 3,
+  "bar.customModules.cava.stereo": false,
+  "bar.customModules.worldclock.tz": [
+    "America/New_York",
+    "America/Argentina"
+  ],
+  "theme.bar.buttons.modules.cava.enableBorder": false,
+  "bar.customModules.cava.framerate": 100
 }

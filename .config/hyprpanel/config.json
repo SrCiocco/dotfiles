@@ -480,7 +480,7 @@
   "theme.bar.buttons.battery.enableBorder": false,
   "bar.battery.label": false,
   "bar.battery.hideLabelWhenFull": false,
-  "theme.bar.buttons.systray.enableBorder": false,
+  "theme.bar.buttons.systray.enableBorder": true,
   "theme.bar.buttons.clock.enableBorder": true,
   "bar.clock.format": "%a %d %b  %H:%M:%S",
   "theme.bar.buttons.clock.spacing": "0.5em",
@@ -618,5 +618,9 @@
   ],
   "theme.bar.buttons.modules.cava.enableBorder": false,
   "bar.customModules.cava.framerate": 100,
-  "theme.font.size": "1.0rem"
+  "theme.font.size": "1.0rem",
+  "bar.windowtitle.title_map": [],
+  "bar.workspaces.applicationIconMap": {
+    "class:brave-listen.tidal.com__-Default$": "TIDAL"
+  }
 }

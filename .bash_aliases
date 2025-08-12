@@ -25,6 +25,9 @@ alias bashrc="$EDITOR $BASHRC"
 
 # - Fin de los atajos a configuraciones.
 
+# lsblk.
+alias lsblk="lsblk -o NAME,PARTLABEL,SIZE,LABEL"
+
 # Dotfiles.
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 

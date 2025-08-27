@@ -2,3 +2,12 @@
 Exec=/home/ciocco/.local/bin/Obsidian.AppImage
 Name=Obsidian
 Type=Application
+Name[en_US.utf-8]=Obsidian
+X-GNOME-FullName[en_US.utf-8]=Obsidian
+Comment[en_US.utf-8]=
+Icon=gnome-books
+NoDisplay=false
+Path=
+Terminal=false
+X-GNOME-UsesNotifications=false
+Categories=Education;

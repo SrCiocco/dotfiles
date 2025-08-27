@@ -1,7 +1,14 @@
 [Desktop Entry]
 Name=WhatsApp
 Exec=brave --app=https://web.whatsapp.com
-Icon=/home/ciocco/.local/share/icons/user/whatsapp.svg
+Icon=whatsapp
 Type=Application
-Categories=Network;WebBrowser;
+Categories=WebBrowser;Network;
 StartupNotify=true
+Name[en_US.utf-8]=WhatsApp
+X-GNOME-FullName[en_US.utf-8]=WhatsApp
+Comment[en_US.utf-8]=
+NoDisplay=false
+Path=
+Terminal=false
+X-GNOME-UsesNotifications=true

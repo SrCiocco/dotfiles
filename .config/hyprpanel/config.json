@@ -575,7 +575,7 @@
   "bar.windowtitle.label": true,
   "bar.windowtitle.icon": true,
   "bar.windowtitle.truncation": true,
-  "menus.clock.weather.location": "Rosario",
+  "menus.clock.weather.location": "Los Angeles",
   "menus.dashboard.shortcuts.left.shortcut1.command": "brave --profile-directory=\"Default\"",
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Brave",
   "menus.dashboard.shortcuts.left.shortcut1.icon": "󰇩",
@@ -591,7 +591,7 @@
   "theme.font.name": "Ubuntu Nerd Font",
   "theme.font.style": "italic",
   "theme.font.label": "Adwaita Sans Heavy Italic",
-  "theme.bar.layer": "top",
+  "theme.bar.layer": "bottom",
   "bar.bluetooth.label": true,
   "bar.clock.icon": "󰸗",
   "bar.customModules.netstat.pollingInterval": 100,
@@ -622,5 +622,11 @@
   "bar.windowtitle.title_map": [],
   "bar.workspaces.applicationIconMap": {
     "class:brave-listen.tidal.com__-Default$": "TIDAL"
-  }
+  },
+  "theme.bar.buttons.modules.storage.enableBorder": false,
+  "bar.customModules.storage.label": true,
+  "bar.customModules.storage.units": "auto",
+  "bar.customModules.storage.tooltipStyle": "percentage-bar",
+  "theme.bar.buttons.modules.netstat.enableBorder": false,
+  "menus.clock.weather.key": "5a6240ffe6eb2b5aa4cdec0f30216b8b\n"
 }

@@ -628,5 +628,6 @@
   "bar.customModules.storage.units": "auto",
   "bar.customModules.storage.tooltipStyle": "percentage-bar",
   "theme.bar.buttons.modules.netstat.enableBorder": false,
-  "menus.clock.weather.key": "5a6240ffe6eb2b5aa4cdec0f30216b8b\n"
+  "menus.clock.weather.key": "5a6240ffe6eb2b5aa4cdec0f30216b8b\n",
+  "terminal": "$TERM"
 }

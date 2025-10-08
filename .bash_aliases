@@ -25,13 +25,17 @@ alias bashrc="$EDITOR $BASHRC"
 
 # - Fin de los atajos a configuraciones.
 
+# diff.
+alias diff="kitten diff"
+
 # lsblk.
 alias lsblk="lsblk -o NAME,PARTLABEL,SIZE,LABEL"
 
 # Dotfiles.
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
-alias rcc="rclone copy $HOME/Documents/Facultad/IPS-Drive drive:Facultad/"
+# Sincronizar Drive de la facu.
+alias rsync="rclone sync $HOME/Documents/Facultad/IPS-Drive drive:Facultad/"
 
 # Mostrar una imagen con kitty
 
@@ -66,8 +70,6 @@ alias ll="lsd -alF"
 
 # cat.
 alias cat="bat"
-
-alias mj="command cat $HOME/Imágenes/mj.txt"
 
 # zoxide.
 alias cd="z"

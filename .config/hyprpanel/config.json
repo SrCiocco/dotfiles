@@ -425,7 +425,7 @@
       ]
     }
   },
-  "theme.bar.buttons.borderSize": "0.1em",
+  "theme.bar.buttons.borderSize": "0.05em",
   "theme.bar.border.location": "none",
   "theme.bar.enableShadow": false,
   "bar.launcher.autoDetectIcon": false,
@@ -476,5 +476,17 @@
   "menus.clock.time.military": true,
   "menus.clock.time.hideSeconds": false,
   "menus.clock.weather.location": "Rosario",
-  "menus.clock.weather.unit": "metric"
+  "menus.clock.weather.unit": "metric",
+  "theme.bar.floating": false,
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.location": "top",
+  "theme.bar.menus.monochrome": false,
+  "wallpaper.pywal": false,
+  "wallpaper.enable": false,
+  "menus.transition": "crossfade",
+  "theme.bar.menus.enableShadow": false,
+  "menus.dashboard.controls.enabled": true,
+  "menus.dashboard.shortcuts.enabled": true,
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "󰇩",
+  "theme.bar.buttons.modules.microphone.enableBorder": false
 }

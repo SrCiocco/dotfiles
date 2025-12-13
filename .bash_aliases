@@ -34,9 +34,9 @@ alias lsblk="lsblk -o NAME,PARTLABEL,SIZE,LABEL"
 # Dotfiles.
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
-# Sincronizar Drive de la facu.
-alias rsync="rclone sync $HOME/Documents/Facultad/IPS-Drive drive:Facultad/"
-
+# Sincronizar Drive de la facu. (Copiar de local a remoto).
+alias rcslr="rclone sync $HOME/Documents/Facultad/IPS-Drive drive:Facultad/"
+alias rcsrl="rclone sync drive:Facultad/ $HOME/Documents/Facultad/IPS-Drive/"
 # Mostrar una imagen con kitty
 
 alias icat="kitten icat"

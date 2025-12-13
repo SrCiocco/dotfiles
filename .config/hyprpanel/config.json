@@ -472,7 +472,7 @@
   ],
   "theme.bar.buttons.modules.power.enableBorder": false,
   "theme.font.weight": 600,
-  "theme.font.size": "1.0rem",
+  "theme.font.size": "0.85rem",
   "menus.clock.time.military": true,
   "menus.clock.time.hideSeconds": false,
   "menus.clock.weather.location": "Rosario",
@@ -488,5 +488,11 @@
   "menus.dashboard.controls.enabled": true,
   "menus.dashboard.shortcuts.enabled": true,
   "menus.dashboard.shortcuts.left.shortcut1.icon": "󰇩",
-  "theme.bar.buttons.modules.microphone.enableBorder": false
+  "theme.bar.buttons.modules.microphone.enableBorder": false,
+  "theme.bar.layer": "top",
+  "tear": false,
+  "bar.autoHide": "never",
+  "theme.font.name": "Liberation Sans",
+  "theme.font.label": "Liberation Sans",
+  "theme.font.style": "normal"
 }

@@ -535,5 +535,6 @@
   "bar.customModules.updates.padZero": true,
   "theme.matugen": false,
   "theme.bar.buttons.background_opacity": 100,
-  "theme.bar.buttons.background_hover_opacity": 50
+  "theme.bar.buttons.background_hover_opacity": 50,
+  "bar.customModules.ram.labelType": "free"
 }

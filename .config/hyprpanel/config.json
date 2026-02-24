@@ -536,5 +536,7 @@
   "theme.matugen": false,
   "theme.bar.buttons.background_opacity": 100,
   "theme.bar.buttons.background_hover_opacity": 50,
-  "bar.customModules.ram.labelType": "free"
+  "bar.customModules.ram.labelType": "free",
+  "bar.customModules.ram.round": true,
+  "bar.customModules.ram.pollingInterval": 1000
 }

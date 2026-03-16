@@ -39,3 +39,8 @@ eval "$(zoxide init bash)"
 
 # I want GPG to know where tty i am in :)
 export GPG_TTY=$(tty)
+
+# Keychain config
+if [ -x /usr/bin/keychain ]; then
+    eval $(keychain --eval --quiet --nogui)
+fi

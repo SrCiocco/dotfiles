@@ -32,11 +32,11 @@ alias diff="kitten diff"
 alias lsblk="lsblk -o NAME,PARTLABEL,SIZE,LABEL"
 
 # Dotfiles.
-alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias dotfiles="git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME/.dotfiles"
 
 # Sincronizar Drive de la facu. (Copiar de local a remoto).
-alias rcslr="rclone sync $HOME/Documents/Facultad/IPS-Drive drive:Facultad/"
-alias rcsrl="rclone sync drive:Facultad/ $HOME/Documents/Facultad/IPS-Drive/"
+alias rcslr="rclone sync $HOME/Documents/Facultad/ drive:Facultad/"
+alias rcsrl="rclone sync drive:Facultad/ $HOME/Documents/Facultad/"
 # Mostrar una imagen con kitty
 
 alias icat="kitten icat"
@@ -65,7 +65,7 @@ alias rmf="rm -rfv"
 # + Aquí pondré los aliases para el comando ls.
 alias ls="lsd -F"
 alias la="lsd -aF"
-alias ll="lsd -alF"
+alias ll="lsd -alFh"
 # - Fin de los aliases para el comando ls.
 
 # cat.

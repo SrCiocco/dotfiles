@@ -9,8 +9,8 @@ Dotfiles management using GNU Stow and Git.
 
 1. Clone this repo in your home directory:
 ```
-   git clone https://github.com/SrCiocco/dotfiles.git ~/dotfiles
-   cd ~/dotfiles
+git clone https://github.com/SrCiocco/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 ```
 
 2. Stow the packages (directories) you want to install.

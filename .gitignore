@@ -1,0 +1,3 @@
+# Ignoring cache files from neovim.
+nvim/.config/nvim/.netrwhist
+nvim/.config/nvim/undo/

@@ -1,0 +1,12 @@
+[user]
+	email = 193316448+SrCiocco@users.noreply.github.com
+	name = Marcos Ojeda
+	signingkey = 05A7359E62856F23
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[gpg]
+	program = gpg

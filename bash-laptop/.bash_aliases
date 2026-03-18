@@ -6,7 +6,7 @@
 
 ALIASES="$HOME/.bash_aliases"
 BASHRC="$HOME/.bashrc"
-
+SWAYCONF="$HOME/.config/sway/config"
 # - Fin de los archivos de configuración.
 
 
@@ -14,7 +14,7 @@ BASHRC="$HOME/.bashrc"
 
 alias aliases="$EDITOR $ALIASES"
 alias bashrc="$EDITOR $BASHRC"
-
+alias swayconf="$EDITOR $SWAYCONF"
 # - Fin de los atajos a configuraciones.
 
 # lsblk.

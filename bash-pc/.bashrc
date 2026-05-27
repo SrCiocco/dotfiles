@@ -44,6 +44,3 @@ export GPG_TTY=$(tty)
 if [ -x /usr/bin/keychain ]; then
     eval $(keychain --eval --quiet --nogui)
 fi
-
-# Homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"

@@ -3,7 +3,6 @@
 ########################################################
 
 # + Aquí pondré los aliases para AppImages.
-alias obsidian="Obsidian.AppImage"
 # - Fin de los aliases para AppImages.
 
 # + Aquí pondré los archivos de configuración.

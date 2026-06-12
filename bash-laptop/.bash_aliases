@@ -24,8 +24,8 @@ alias lsblk="lsblk -o NAME,PARTLABEL,SIZE,LABEL"
 alias dotfiles="git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME/.dotfiles"
 
 # Sincronizar Drive de la facu. (Copiar de local a remoto).
-alias rcslr="rclone sync $HOME/Documents/Facultad/ drive:Facultad/"
-alias rcsrl="rclone sync drive:Facultad/ $HOME/Documents/Facultad/"
+alias rcslr="rclone sync $HOME/Documents/Facultad/ facultad:Facultad/"
+alias rcsrl="rclone sync facultad:Facultad/ $HOME/Documents/Facultad/"
 
 # Fastfetch.
 

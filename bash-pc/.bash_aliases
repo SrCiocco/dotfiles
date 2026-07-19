@@ -35,7 +35,7 @@ alias dotfiles="git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME/.dotfiles"
 
 # Sincronizar Drive de la facu. (Copiar de local a remoto).
 alias rcslr="rclone sync $HOME/Documents/Facultad/ drive:Facultad/"
-alias rcsrl="rclone sync drive:Facultad/ $HOME/Documents/Facultad/"
+alias rcsrl="rclone sync facultad:Facultad/ $HOME/Documents/Facultad/"
 # Mostrar una imagen con kitty
 
 alias icat="kitten icat"

@@ -7,7 +7,7 @@
 
 # + Aquí pondré los archivos de configuración.
 
-HYPRCONFIG="$XDG_CONFIG_HOME/hypr/hyprland.conf"
+HYPRCONFIG="$XDG_CONFIG_HOME/hypr/hyprland.lua"
 KITTYCONFIG="$XDG_CONFIG_HOME/kitty/kitty.conf"
 ALIASES="$HOME/.bash_aliases"
 BASHRC="$HOME/.bashrc"
@@ -34,7 +34,7 @@ alias lsblk="lsblk -o NAME,PARTLABEL,SIZE,LABEL"
 alias dotfiles="git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME/.dotfiles"
 
 # Sincronizar Drive de la facu. (Copiar de local a remoto).
-alias rcslr="rclone sync $HOME/Documents/Facultad/ drive:Facultad/"
+alias rcslr="rclone sync $HOME/Documents/Facultad/ facultad:Facultad/"
 alias rcsrl="rclone sync facultad:Facultad/ $HOME/Documents/Facultad/"
 # Mostrar una imagen con kitty
 

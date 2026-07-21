@@ -1,0 +1,92 @@
+[general]
+font-sans = "JetBrains Mono"
+font-mono = "JetBrainsMono Nerd Font"
+
+[bar]
+button-variant = "basic"
+button-icon-size = 0.8999999761581421
+button-label-size = 0.75
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "hyprland-workspaces",
+    "window-title",
+]
+center = [
+    "clock",
+    "weather",
+]
+right = [
+    "separator",
+    "separator",
+    "separator",
+    "separator",
+    "media",
+    "cava",
+    "separator",
+    "separator",
+    "separator",
+    "volume",
+    "network",
+    "bluetooth",
+    "notifications",
+    "separator",
+    "separator",
+    "systray",
+    "separator",
+]
+
+[styling]
+rounding = "md"
+
+[styling.palette]
+bg = "#000000"
+surface = "#000000"
+elevated = "#202020"
+fg-muted = "#77767b"
+primary = "#ffffff"
+
+[modules.bluetooth]
+border-color = "auto"
+icon-color = "fg-default"
+icon-bg-color = "auto"
+label-color = "auto"
+
+[modules.cava]
+bars = 10
+
+[modules.clock]
+format = "%d/%m/%Y %H:%M"
+icon-show = false
+dropdown-show-seconds = true
+
+[modules.media]
+icon-type = "spinning-disc"
+border-color = "auto"
+icon-color = "fg-default"
+icon-bg-color = "auto"
+label-color = "auto"
+
+[modules.notifications]
+border-color = "auto"
+icon-color = "fg-default"
+icon-bg-color = "auto"
+label-color = "auto"
+
+[modules.volume]
+border-color = "auto"
+icon-color = "fg-default"
+icon-bg-color = "auto"
+label-color = "auto"
+
+[modules.weather]
+location = "Rosario"
+time-format = "24h"
+
+[modules.window-title]
+border-color = "auto"
+icon-color = "fg-default"
+icon-bg-color = "auto"
+label-color = "auto"

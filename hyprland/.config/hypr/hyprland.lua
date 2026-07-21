@@ -17,7 +17,7 @@
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
     output   = "",
-    mode     = "preferred",
+    mode     = "1920x1080@100",
     position = "auto",
     scale    = "auto",
 })
@@ -33,8 +33,7 @@ local fileManager = "thunar"
 local appLauncher = "vicinae toggle"
 local printScr = "grimblast copysave screen -n"
 local printSel = "grimblast copysave area -n"
---local clipboard = "vicinae vicinae://launch/clipboard/history"
-local clipboard = "cursor-clip"
+local clipboard = "vicinae vicinae://launch/clipboard/history"
 -------------------
 ---- AUTOSTART ----
 -------------------
@@ -51,13 +50,14 @@ local clipboard = "cursor-clip"
 -- end)
 
 hl.on("hyprland.start", function ()
-	hl.exec_cmd("cursor-clip --daemon")
+	hl.exec_cmd("gnome-keyring-daemon")
+	hl.exec_cmd("hypridle")
 	hl.exec_cmd("hyprpm reload")
 	hl.exec_cmd("vicinae server")
 	hl.exec_cmd("waypaper --restore")
-	hl.exec_cmd("hyprpanel")
+	hl.exec_cmd("wayle shell")
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
---	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
+	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
 	hl.exec_cmd("openrgb -p WHITE SUTIL")
 end)
 
@@ -97,14 +97,14 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in  = 5,
-        gaps_out = 20,
+        gaps_in  = 3,
+        gaps_out = 10,
 
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border   = { colors = {"rgba(ffffff30)", "rgba(ffffff30)"}, angle = 45 },
+            inactive_border = "rgba(ffffff15)",
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -127,12 +127,12 @@ hl.config({
         shadow = {
             enabled      = true,
             range        = 4,
-            render_power = 3,
+            render_power = 2,
             color        = 0xee1a1a1a,
         },
 
         blur = {
-            enabled   = true,
+            enabled   = false,
             size      = 3,
             passes    = 1,
             vibrancy  = 0.1696,
@@ -217,8 +217,8 @@ hl.config({
 
 hl.config({
     misc = {
-        force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
+        force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
+        disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
     },
 })
 
@@ -237,7 +237,7 @@ hl.config({
 
         follow_mouse = 1,
 
-        sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
+        sensitivity = 0.5, -- -1.0 - 1.0, 0 means no modification.
 
         touchpad = {
             natural_scroll = false,
@@ -271,16 +271,27 @@ local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipboard))
 hl.bind(mainMod .. " + SHIFT + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(appLauncher))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("fullscreen"))
+
+-- Print the entire screen
+hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd(printScr))
+
+-- Print just a selected area of the screen
+hl.bind("PRINT", hl.dsp.exec_cmd(printSel))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
+
+-- Fullscreen mode
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]

@@ -56,7 +56,8 @@ hl.on("hyprland.start", function ()
 	hl.exec_cmd("vicinae server")
 	hl.exec_cmd("waypaper --restore")
 	hl.exec_cmd("wayle shell")
-	hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	--hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
 	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
 	hl.exec_cmd("openrgb -p WHITE SUTIL")
 end)
@@ -237,7 +238,7 @@ hl.config({
 
         follow_mouse = 1,
 
-        sensitivity = 0.5, -- -1.0 - 1.0, 0 means no modification.
+        sensitivity = 0.6, -- -1.0 - 1.0, 0 means no modification.
 
         touchpad = {
             natural_scroll = false,

@@ -9,6 +9,7 @@
 
 HYPRCONFIG="$XDG_CONFIG_HOME/hypr/hyprland.lua"
 KITTYCONFIG="$XDG_CONFIG_HOME/kitty/kitty.conf"
+PACMANCONFIG="/etc/pacman.conf"
 ALIASES="$HOME/.bash_aliases"
 BASHRC="$HOME/.bashrc"
 
@@ -21,6 +22,7 @@ alias hyprconf="$EDITOR $HYPRCONFIG"
 alias kittyconf="$EDITOR $KITTYCONFIG"
 alias aliases="$EDITOR $ALIASES"
 alias bashrc="$EDITOR $BASHRC"
+alias pacmanconf="sudo $EDITOR $PACMANCONFIG"
 
 # - Fin de los atajos a configuraciones.
 

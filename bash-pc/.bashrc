@@ -44,3 +44,10 @@ export GPG_TTY=$(tty)
 if [ -x /usr/bin/keychain ]; then
     eval $(keychain --eval --quiet --nogui)
 fi
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/ciocco/.local/bin:$PATH"
+
+# Go
+export PATH="$PATH:$HOME/go/bin"
